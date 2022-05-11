@@ -20,7 +20,7 @@ The following table illustrates the pinout.
 |Pin|Description|Pin|Description|
 |---|---|---|---|
 |6|GND|12|TX|
-|13|RX|16|Console Enable|
+|13|RX|15|Console Enable|
 
 D2-71583 **NO** is 5V tolerant.
 
@@ -34,6 +34,10 @@ D2-71583 **NO** is 5V tolerant.
 Here is the DE-15 male as viewed from the front of the Main Board.
 
 <img src=/images/DE-15-M.jpg width="200">
+
+# Enable Console
+
+Connect pin 15 to GND.
 
 # Commands
 
