@@ -76,7 +76,7 @@ The following commands are single byte:
 |SET_EFFECT_NO|0x35|Disable all Effects|
 |||
 |BLOCK_INPUTS|0x22|Disable signal input|
-|GET_TEMP|0x25|Get Temprature sensors|
+|GET_TEMP|0x25|Get Temperature sensors|
 |GET_INPUT_GAIN|0x2F|Get gain of input signal|
 |NO_BLOCK_INPUTS|0x33|Enable signal input|
 |||
