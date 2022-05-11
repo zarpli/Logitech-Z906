@@ -23,13 +23,13 @@ The following table illustrates the pinout.
 |---|---|---|---|
 |1||2||
 |3||4||
-|5||6||
+|5||6|GND|
 |7||8||
 |9||10||
-|11||12||
-|13||14||
-|15||||
+|11||12|Tx|
+|13|Rx|14||
+|15|Console Enable|||
 
-Here is the DE-15 female as viewed from the front of the BrightSign units.
+Here is the DE-15 female as viewed from the front of the Main Board.
 
 <img src=https://raw.githubusercontent.com/zarpli/Logitech-Z906/main/images/DE-15-F.png width="300">
