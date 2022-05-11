@@ -15,10 +15,7 @@ The [Z906](datasheet/Z906_User_Manual.pdf) is who has six class D amplifiers inc
 
 The main component is a Renesas [D2-71583](datasheet/D2-71583.pdf) intelligent digital amplifier and sound processor.
 
-The communication between the Digital Audio Processor and the console is done through TTL serial communication at 3.3V
-
-**The D2-71583 no is 5V tolerant**
-
+The communication between the Digital Audio Processor and the console is done through TTL serial communication at 3.3V.
 
 The following table illustrates the pinout.
 
@@ -32,6 +29,15 @@ The following table illustrates the pinout.
 |11||12|TX|
 |13|RX|14||
 |15|Console Enable|||
+
+D2-71583 **NO** is 5V tolerant.
+
+|Serial settings||
+|---|---|
+|Baud rate|57600|
+|Data|8 bit|
+|Parity|Odd|
+|Stop|1 bit|
 
 Here is the DE-15 male as viewed from the front of the Main Board.
 
