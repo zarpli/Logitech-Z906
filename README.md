@@ -51,12 +51,12 @@ The following commands are single byte:
 
 |function|cmd|description|
 |---|---|---|
-|SET_INPUT_1|0x02|enable TRS 5.1 input|
-|SET_INPUT_2|0x05|enable RCA 2.0 input|
-|SET_INPUT_3|0x03|enable Optical 1 input|
-|SET_INPUT_4|0x04|enable Optical 2 input|
-|SET_INPUT_5|0x06|enable Coaxial input|
-|SET_INPUT_AUX|0x07|enable TRS 2.0 (console) input|
+|SET_INPUT_1|0x02|Enable TRS 5.1 input|
+|SET_INPUT_2|0x05|Enable RCA 2.0 input|
+|SET_INPUT_3|0x03|Enable Optical 1 input|
+|SET_INPUT_4|0x04|Enable Optical 2 input|
+|SET_INPUT_5|0x06|Enable Coaxial input|
+|SET_INPUT_AUX|0x07|Enable TRS 2.0 (console) input|
 |||
 |GAIN_MAIN_UP|0x08|Increase Main Gain|
 |GAIN_MAIN_DOWN|0x09|Decrease Main Gain|
