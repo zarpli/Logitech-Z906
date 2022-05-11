@@ -7,13 +7,13 @@ This 5.1 speaker system comes with a 1000 Watts Peak/500 Watts RMS power for a r
 
 <p align="center"><img src=/images/logitech_z906.png></p>
 
-The Z906 is who has six class D amplifiers included, but you cannot use them if you do not have the console connected.
+The [Z906](datasheet/Z906_User_Manual.pdf) is who has six class D amplifiers included, but you cannot use them if you do not have the console connected.
 
 <p align="center"><img src=/images/z906-console.png></p>
 
-The main component is a Renesas D2-71583 intelligent digital amplifier and sound processor.
-
 # DE-15 Console Connector
+
+The main component is a Renesas [D2-71583](datasheet/D2-71583.pdf) intelligent digital amplifier and sound processor.
 
 The communication between the Digital Audio Processor and the console is done through TTL serial communication at 3.3V
 
