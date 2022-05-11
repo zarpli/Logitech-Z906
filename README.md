@@ -80,10 +80,10 @@ The following commands are single byte:
 |GET_INPUT_GAIN|0x2F|Get gain of input signal|
 |NO_BLOCK_INPUTS|0x33|Enable signal input|
 |||
-|RESET_IDLE_TIME|0x30|Reset Idle Timer|
-|GET_IDLE_TIME|0x31|Get Idle Timer|
+|RESET_IDLE_TIME|0x30|Reset Power-Up Timer|
+|GET_IDLE_TIME|0x31|Get Power-Up Timer|
 |GET_STATUS|0x34|Get General Status|
 |EEPROM_SAVE|0x36|Save current settings to EEPROM|
 |||
 |MUTE_ON|0x38|Enable Mute|
-|MUTE_OFF|0x39|Disbale Mute|
+|MUTE_OFF|0x39|Disable Mute|
