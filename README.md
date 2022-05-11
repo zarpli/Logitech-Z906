@@ -32,4 +32,4 @@ The following table illustrates the pinout.
 
 Here is the DE-15 male as viewed from the front of the Main Board.
 
-<img src=https://raw.githubusercontent.com/zarpli/Logitech-Z906/main/images/DE-15-M.png width="300">
+<img src=https://raw.githubusercontent.com/zarpli/Logitech-Z906/main/images/DE-15-M.jpg width="300">
