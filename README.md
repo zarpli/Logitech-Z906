@@ -42,3 +42,31 @@ D2-71583 **NO** is 5V tolerant.
 Here is the DE-15 male as viewed from the front of the Main Board.
 
 <img src=https://raw.githubusercontent.com/zarpli/Logitech-Z906/main/images/DE-15-M.jpg width="300">
+
+# Commands
+
+The following commands are single byte:
+
+**Inputs**
+
+|function|cmd|description|
+|---|---|---|
+|SET_INPUT_1|0x02|enable TRS 5.1 input|
+|SET_INPUT_2|0x05|enable RCA 2.0 input|
+|SET_INPUT_3|0x03|enable Optical 1 input|
+|SET_INPUT_4|0x04|enable Optical 2 input|
+|SET_INPUT_5|0x06|enable Coaxial input|
+|SET_INPUT_AUX|0x07|enable TRS 2.0 (console) input|
+|||
+|GAIN_MAIN_UP|0x08|Increase Main Gain|
+|GAIN_MAIN_DOWN|0x09|Decrease Main Gain|
+|GAIN_SUB_UP|0x0A|Increase Subwoofer Gain|
+|GAIN_SUB_DOWN|0x0B|Decrease Subwoofer Gain|
+|GAIN_CENTER_UP|0x0C|Increase Center Gain|
+|GAIN_CENTER_DOWN|0x0D|Decrease Subwoofer Gain|
+|GAIN_REAR_UP|0x0E|Increase Rear Gain|
+|GAIN_DOWN_UP|0x0F|Decrease Rear Gain|
+
+
+
+
