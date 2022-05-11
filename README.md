@@ -15,7 +15,7 @@ The main component is a Renesas D2-71583 intelligent digital amplifier and sound
 
 # DE-15 Console Connector
 
-The communication between the DSP and the console is done through TTL serial communication at 3.3V
+The communication between the Digital Audio Processor and the console is done through TTL serial communication at 3.3V
 
 The following table illustrates the pinout.
 
@@ -26,8 +26,8 @@ The following table illustrates the pinout.
 |5||6|GND|
 |7||8||
 |9||10||
-|11||12|Tx|
-|13|Rx|14||
+|11||12|TX|
+|13|RX|14||
 |15|Console Enable|||
 
 Here is the DE-15 female as viewed from the front of the Main Board.
