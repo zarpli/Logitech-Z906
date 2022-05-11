@@ -41,7 +41,7 @@ D2-71583 **NO** is 5V tolerant.
 
 Here is the DE-15 male as viewed from the front of the Main Board.
 
-<img src=https://raw.githubusercontent.com/zarpli/Logitech-Z906/main/images/DE-15-M.jpg width="300">
+<img src=/images/z906-console.png width="300">
 
 # Commands
 
