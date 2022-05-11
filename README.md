@@ -17,6 +17,9 @@ The main component is a Renesas [D2-71583](datasheet/D2-71583.pdf) intelligent d
 
 The communication between the Digital Audio Processor and the console is done through TTL serial communication at 3.3V
 
+**The D2-71583 no is 5V tolerant**
+
+
 The following table illustrates the pinout.
 
 |Pin|Description|Pin|Description|
