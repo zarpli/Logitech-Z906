@@ -30,6 +30,6 @@ The following table illustrates the pinout.
 |13|RX|14||
 |15|Console Enable|||
 
-Here is the DE-15 female as viewed from the front of the Main Board.
+Here is the DE-15 male as viewed from the front of the Main Board.
 
-<img src=https://raw.githubusercontent.com/zarpli/Logitech-Z906/main/images/DE-15-F.png width="300">
+<img src=https://raw.githubusercontent.com/zarpli/Logitech-Z906/main/images/DE-15-M.png width="300">
