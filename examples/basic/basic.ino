@@ -1,45 +1,46 @@
 /*
 Zarpli - Tecnología Interactiva
-12112021 Alejandro Zárate
-https://github.com/zarpli/BrightSign/
+30042022 Alejandro Zárate
+https://github.com/zarpli/Logitech-Z906/
 
 DESCRIPTION
 ====================
   
-Simple example of the BrightSign library that play a media file 
-and wait for it to finish to run again.
-  
-The BSuControl Script must be installed in the BrightSign unit 
-memory unit and must be connected to the Serial1 port.  
-
-https://github.com/zarpli/BSuControl/
-
-Media Files for Testing
-https://github.com/zarpli/Media/
+Simple example of the Logitech-Z906 library.
 */
 
-#include <BrightSign.h>
+#include <Z906.h>
 
-// Instantiate a BrightSign object and Attach to Serial1
-BrightSign BS(Serial1);   
+// Instantiate a Z906 object and Attach to Serial1
+Z906 AMP(Serial1);
 
 void setup(){
-
-// Enable debug msg over Serial
-BS.debug();               
 
 Serial.begin(9600);
 while(!Serial);
 
-Serial.println("Waiting BrightSign Power-Up");
-while(!BS.online())BS.update(); 
+while(AMP.command(VERSION) == 0)
+{
+  Serial.println("Waiting Z906 Power-Up");
+  delay(1000);
+}
 
-//Set Volume to 20%
-BS.volume(20);            
+Serial.println("Z906 Version : " + (String) AMP.command(VERSION));
+
+// Power ON PWM Generator
+AMP.command(PWM_ON);
+
+// Enable RCA 2.0 Input
+AMP.command(SET_INPUT_2);
+
+// Disable Mute
+AMP.command(MUTE_OFF);
 }
 
 void loop(){
-// Update the BrightSign instance
-BS.update();
-if(BS.media_ended()) BS.play("AUDIO.M4A");
+
+Serial.println("Current Main Gain : " + (String) AMP.request(MAIN_GAIN));
+Serial.println("Current Input : " + (String) AMP.request(CURRENT_INPUT));
+delay(1000);
+
 }
