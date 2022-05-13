@@ -5,7 +5,7 @@ This 5.1 speaker system comes with a 1000 Watts Peak/500 Watts RMS power for a r
 
 <p align="center"><img src=/images/logitech_z906.png></p>
 
-The [Z906](datasheet/Z906_User_Manual.pdf) is who has six class D amplifiers included, but you cannot use them if you do not have the console connected.
+The [Logitech Z906](datasheet/Z906_User_Manual.pdf) is who has six class D amplifiers included, but you cannot use them if you do not have the console connected.
 
 <p align="center"><img src=/images/z906-console.png></p>
 
@@ -39,9 +39,18 @@ Here is the DE-15 male as viewed from the front of the Main Board.
 
 Connect pin 15 to GND.
 
-# Commands
+# Basic Usage
+```C++
+Z906 Logi(Serial1)
+```
+Instantiate a Z906 object and attach to Serial1, you may create multiple Z906 objects.
 
-The following commands are single byte:
+```C++
+Logi.cmd(MUTE_ON)
+```
+The cmd method have argument any single byte command, check this list.
+
+# Commands of single byte
 
 |function|cmd|description|
 |---|---|---|
