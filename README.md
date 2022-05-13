@@ -13,7 +13,7 @@ The [Logitech Z906](datasheet/Z906_User_Manual.pdf) is who has six class D ampli
 
 The main component is a Renesas [D2-71583](datasheet/D2-71583.pdf) intelligent digital amplifier and sound processor.
 
-<p align="center"><img src=/images/D2-71583.jpg width="500"></p>
+<p align="center"><img src=/images/D2-71583.jpg></p>
 
 # DE-15 Console Connector
 
