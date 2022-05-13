@@ -45,7 +45,7 @@ Instantiate a Z906 object and attach to Serial1, you may create multiple Z906 ob
 ```C++
 Z906 LOGI(Serial1)
 ```
-**cmd** method uses single or double argument, check this list for single and this for double.
+**cmd** method uses single or double argument, check next tables.
 ```C++
 LOGI.cmd(arg_a)
 LOGI.cmd(arg_a, arg_b)
