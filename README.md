@@ -43,42 +43,36 @@ Connect pin 15 to GND.
 
 The following commands are single byte:
 
-**Inputs**
-
 |function|cmd|description|
 |---|---|---|
-|SET_INPUT_1|0x02|Enable TRS 5.1 input|
-|SET_INPUT_2|0x05|Enable RCA 2.0 input|
-|SET_INPUT_3|0x03|Enable Optical 1 input|
-|SET_INPUT_4|0x04|Enable Optical 2 input|
-|SET_INPUT_5|0x06|Enable Coaxial input|
-|SET_INPUT_AUX|0x07|Enable TRS 2.0 (console) input|
+|SELECT_INPUT_1|0x02|Enable TRS 5.1 input|
+|SELECT_INPUT_2|0x05|Enable RCA 2.0 input|
+|SELECT_INPUT_3|0x03|Enable Optical 1 input|
+|SELECT_INPUT_4|0x04|Enable Optical 2 input|
+|SELECT_INPUT_5|0x06|Enable Coaxial input|
+|SELECT_INPUT_AUX|0x07|Enable TRS 2.0 (console) input|
 |||
-|GAIN_MAIN_UP|0x08|Increase Main Gain|
-|GAIN_MAIN_DOWN|0x09|Decrease Main Gain|
-|GAIN_SUB_UP|0x0A|Increase Subwoofer Gain|
-|GAIN_SUB_DOWN|0x0B|Decrease Subwoofer Gain|
-|GAIN_CENTER_UP|0x0C|Increase Center Gain|
-|GAIN_CENTER_DOWN|0x0D|Decrease Subwoofer Gain|
-|GAIN_REAR_UP|0x0E|Increase Rear Gain|
-|GAIN_DOWN_UP|0x0F|Decrease Rear Gain|
+|LEVEL_MAIN_UP|0x08|Increase Main Gain|
+|LEVEL_MAIN_DOWN|0x09|Decrease Main Gain|
+|LEVEL_SUB_UP|0x0A|Increase Subwoofer Gain|
+|LEVEL_SUB_DOWN|0x0B|Decrease Subwoofer Gain|
+|LEVEL_CENTER_UP|0x0C|Increase Center Gain|
+|LEVEL_CENTER_DOWN|0x0D|Decrease Subwoofer Gain|
+|LEVEL_REAR_UP|0x0E|Increase Rear Gain|
+|LEVEL_DOWN_UP|0x0F|Decrease Rear Gain|
 |||
 |PWM_OFF|0x10|PWM Generator OFF|
 |PWM_ON|0x11|PWM Generator ON|
 |||
-|SET_EFFECT_3D|0x14|Enable 3D Effect|
-|SET_EFFECT_41|0x15|Enable 4.1 Effect|
-|SET_EFFECT_21|0x16|Enable 2.1 Effect|
-|SET_EFFECT_NO|0x35|Disable all Effects|
+|SELECT_EFFECT_3D|0x14|Enable 3D Effect|
+|SELECT_EFFECT_41|0x15|Enable 4.1 Effect|
+|SELECT_EFFECT_21|0x16|Enable 2.1 Effect|
+|SELECT_EFFECT_NO|0x35|Disable all Effects|
 |||
 |BLOCK_INPUTS|0x22|Disable signal input|
-|GET_TEMP|0x25|Get Temperature sensors|
-|GET_INPUT_GAIN|0x2F|Get gain of input signal|
 |NO_BLOCK_INPUTS|0x33|Enable signal input|
 |||
-|RESET_PU_TIMER|0x30|Reset Power-Up Timer|
-|GET_PU_TIMER|0x31|Get Power-Up Timer|
-|GET_STATUS|0x34|Get General Status|
+|RESET_PWR_UP_TIME|0x30|Reset Power-Up Timer|
 |EEPROM_SAVE|0x36|Save current settings to EEPROM|
 |||
 |MUTE_ON|0x38|Enable Mute|
