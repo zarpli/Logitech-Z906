@@ -40,16 +40,21 @@ Here is the DE-15 male as viewed from the front of the Main Board.
 Connect pin 15 to GND.
 
 # Basic Usage
-```C++
-Z906 Logi(Serial1)
-```
+
 Instantiate a Z906 object and attach to Serial1, you may create multiple Z906 objects.
-
 ```C++
-Logi.cmd(MUTE_ON)
+Z906 LOGI(Serial1)
 ```
-The cmd method have argument any single byte command, check this list.
-
+**cmd** method uses single or double argument, check this list for single and this for double.
+```C++
+LOGI.cmd(arg_a)
+LOGI.cmd(arg_a, arg_b)
+```
+Examples : 
+```C++
+LOGI.cmd(MUTE_ON)         // Enable Mute
+LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
+```
 # Commands of single byte
 
 |function|cmd|description|
@@ -61,14 +66,14 @@ The cmd method have argument any single byte command, check this list.
 |SELECT_INPUT_5|0x06|Enable Coaxial input|
 |SELECT_INPUT_AUX|0x07|Enable TRS 2.0 (console) input|
 |||
-|LEVEL_MAIN_UP|0x08|Increase Main Gain|
-|LEVEL_MAIN_DOWN|0x09|Decrease Main Gain|
-|LEVEL_SUB_UP|0x0A|Increase Subwoofer Gain|
-|LEVEL_SUB_DOWN|0x0B|Decrease Subwoofer Gain|
-|LEVEL_CENTER_UP|0x0C|Increase Center Gain|
-|LEVEL_CENTER_DOWN|0x0D|Decrease Subwoofer Gain|
-|LEVEL_REAR_UP|0x0E|Increase Rear Gain|
-|LEVEL_DOWN_UP|0x0F|Decrease Rear Gain|
+|LEVEL_MAIN_UP|0x08|Increase Main Level by one unit|
+|LEVEL_MAIN_DOWN|0x09|Decrease Main Level by one unit|
+|LEVEL_SUB_UP|0x0A|Increase Subwoofer Level by one unit|
+|LEVEL_SUB_DOWN|0x0B|Decrease Subwoofer Level by one unit|
+|LEVEL_CENTER_UP|0x0C|Increase Center Level by one unit|
+|LEVEL_CENTER_DOWN|0x0D|Decrease Subwoofer Level by one unit|
+|LEVEL_REAR_UP|0x0E|Increase Rear Level by one unit|
+|LEVEL_DOWN_UP|0x0F|Decrease Rear Level by one unit|
 |||
 |PWM_OFF|0x10|PWM Generator OFF|
 |PWM_ON|0x11|PWM Generator ON|
