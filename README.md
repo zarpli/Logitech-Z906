@@ -9,6 +9,8 @@ The [Logitech Z906](datasheet/Z906_User_Manual.pdf) is who has six class D ampli
 
 <p align="center"><img src=/images/z906-console.png></p>
 
+This information is made to be able to control the unit without the need of the console, using any device with a programmable serial port, especially an arduino :)
+
 # hardware
 
 The main component is a Renesas [D2-71583](datasheet/D2-71583.pdf) intelligent digital amplifier and sound processor.
