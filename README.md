@@ -91,7 +91,7 @@ LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 |MUTE_ON|Enable Mute|
 |MUTE_OFF|Disable Mute|
 
-# Commands of single argument
+# Commands of double argument
 
 |argument a|argument b|description|
 |---|---|---|
