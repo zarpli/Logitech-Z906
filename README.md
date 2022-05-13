@@ -55,7 +55,7 @@ Examples :
 LOGI.cmd(MUTE_ON)         // Enable Mute
 LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 ```
-# Commands of single byte
+# Commands of single argument
 
 |function|cmd|description|
 |---|---|---|
@@ -91,3 +91,13 @@ LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 |||
 |MUTE_ON|0x38|Enable Mute|
 |MUTE_OFF|0x39|Disable Mute|
+
+# Commands of single argument
+
+|Argument a|Argument b|
+|---|---|
+|MAIN_LEVEL|0-255|
+|READ_LEVEL|0-255|
+|CENTER_LEVEL|0-255|
+|SUB_LEVEL|0-255|
+
