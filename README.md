@@ -56,41 +56,40 @@ LOGI.cmd(MUTE_ON)         // Enable Mute
 LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 ```
 # Commands of single argument
-
-|function|cmd|description|
-|---|---|---|
-|SELECT_INPUT_1|0x02|Enable TRS 5.1 input|
-|SELECT_INPUT_2|0x05|Enable RCA 2.0 input|
-|SELECT_INPUT_3|0x03|Enable Optical 1 input|
-|SELECT_INPUT_4|0x04|Enable Optical 2 input|
-|SELECT_INPUT_5|0x06|Enable Coaxial input|
-|SELECT_INPUT_AUX|0x07|Enable TRS 2.0 (console) input|
-|||
-|LEVEL_MAIN_UP|0x08|Increase Main Level by one unit|
-|LEVEL_MAIN_DOWN|0x09|Decrease Main Level by one unit|
-|LEVEL_SUB_UP|0x0A|Increase Subwoofer Level by one unit|
-|LEVEL_SUB_DOWN|0x0B|Decrease Subwoofer Level by one unit|
-|LEVEL_CENTER_UP|0x0C|Increase Center Level by one unit|
-|LEVEL_CENTER_DOWN|0x0D|Decrease Subwoofer Level by one unit|
-|LEVEL_REAR_UP|0x0E|Increase Rear Level by one unit|
-|LEVEL_DOWN_UP|0x0F|Decrease Rear Level by one unit|
-|||
-|PWM_OFF|0x10|PWM Generator OFF|
-|PWM_ON|0x11|PWM Generator ON|
-|||
-|SELECT_EFFECT_3D|0x14|Enable 3D Effect|
-|SELECT_EFFECT_41|0x15|Enable 4.1 Effect|
-|SELECT_EFFECT_21|0x16|Enable 2.1 Effect|
-|SELECT_EFFECT_NO|0x35|Disable all Effects|
-|||
-|BLOCK_INPUTS|0x22|Disable signal input|
-|NO_BLOCK_INPUTS|0x33|Enable signal input|
-|||
-|RESET_PWR_UP_TIME|0x30|Reset Power-Up Timer|
-|EEPROM_SAVE|0x36|Save current settings to EEPROM|
-|||
-|MUTE_ON|0x38|Enable Mute|
-|MUTE_OFF|0x39|Disable Mute|
+|argument|description|
+|---|---|
+|SELECT_INPUT_1|Enable TRS 5.1 input|
+|SELECT_INPUT_2|Enable RCA 2.0 input|
+|SELECT_INPUT_3|Enable Optical 1 input|
+|SELECT_INPUT_4|Enable Optical 2 input|
+|SELECT_INPUT_5|Enable Coaxial input|
+|SELECT_INPUT_AUX|Enable TRS 2.0 (console) input|
+||
+|LEVEL_MAIN_UP|Increase Main Level by one unit|
+|LEVEL_MAIN_DOWN|Decrease Main Level by one unit|
+|LEVEL_SUB_UP|Increase Subwoofer Level by one unit|
+|LEVEL_SUB_DOWN|Decrease Subwoofer Level by one unit|
+|LEVEL_CENTER_UP|Increase Center Level by one unit|
+|LEVEL_CENTER_DOWN|Decrease Subwoofer Level by one unit|
+|LEVEL_REAR_UP|Increase Rear Level by one unit|
+|LEVEL_DOWN_UP|Decrease Rear Level by one unit|
+||
+|PWM_OFF|PWM Generator OFF|
+|PWM_ON|PWM Generator ON|
+||
+|SELECT_EFFECT_3D|Enable 3D Effect in current input|
+|SELECT_EFFECT_41|Enable 4.1 Effect in current input|
+|SELECT_EFFECT_21|Enable 2.1 Effect in current input|
+|SELECT_EFFECT_NO|Disable all Effects in current input|
+||
+|BLOCK_INPUTS|Disable signal input|
+|NO_BLOCK_INPUTS|Enable signal input|
+||
+|RESET_PWR_UP_TIME|Reset Power-Up Timer|
+|EEPROM_SAVE|Save current settings to EEPROM|
+||
+|MUTE_ON|Enable Mute|
+|MUTE_OFF|Disable Mute|
 
 # Commands of single argument
 
