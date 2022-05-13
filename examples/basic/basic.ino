@@ -6,7 +6,7 @@ https://github.com/zarpli/LOGItech-Z906/
 DESCRIPTION
 ====================
   
-Basic example of the LOGItech-Z906 library.
+Basic example of the Logitech-Z906 library.
 */
 
 #include <Z906.h>
