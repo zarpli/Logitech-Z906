@@ -55,7 +55,7 @@ Examples :
 LOGI.cmd(MUTE_ON)         // Enable Mute
 LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 ```
-# Commands of single argument
+# Single argument command
 |argument|description|
 |---|---|
 |SELECT_INPUT_1|Enable TRS 5.1 input|
@@ -91,7 +91,7 @@ LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 |MUTE_ON|Enable Mute|
 |MUTE_OFF|Disable Mute|
 
-# Commands of double argument
+# Double argument command
 
 |argument a|argument b|description|
 |---|---|---|
