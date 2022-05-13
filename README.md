@@ -74,6 +74,7 @@ LOGI.request(CENTER_LEVEL)  // return current Center Level
 LOGI.request(SUB_LEVEL)     // return current Subwoofer Level
 
 LOGI.request(STATUS_STBY)   // return stand-by status
+LOGI.request(VERSION)       // return firmware version
 ```
 
 # Single argument command
