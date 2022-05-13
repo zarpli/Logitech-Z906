@@ -93,10 +93,10 @@ LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 
 # Commands of single argument
 
-|Argument a|Argument b|
-|---|---|
-|MAIN_LEVEL|0-255|
-|READ_LEVEL|0-255|
-|CENTER_LEVEL|0-255|
-|SUB_LEVEL|0-255|
+|argument a|argument b|description|
+|---|---|---|
+|MAIN_LEVEL|0-255|Set Main Level to argument b value|
+|READ_LEVEL|0-255|Set Read Level to argument b value|
+|CENTER_LEVEL|0-255|Set Center Level to argument b value|
+|SUB_LEVEL|0-255|Set Sub Level to argument b value|
 
