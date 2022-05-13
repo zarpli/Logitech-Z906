@@ -11,7 +11,7 @@ Z906			KEYWORD1
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-com					KEYWORD2
+cmd					KEYWORD2
 request				KEYWORD2
 main_sensor			KEYWORD2
 
