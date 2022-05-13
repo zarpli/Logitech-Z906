@@ -29,7 +29,7 @@ int Z906::update(){
 	for(int i = 0; i < STATUS_TOTAL_LENGTH; i++) status[i] = dev_serial->read();
 	
     if (status[STATUS_STX] != EXP_STX) return 0;
-    if (status[STATUS_MODEL] != EXP_MODEL) return 0;
+    if (status[STATUS_MODEL] != EXP_MODEL_STATUS) return 0;
 	if (status[STATUS_CHECKSUM] == LRC(status, STATUS_TOTAL_LENGTH)) return 1;
 	
 	return 0;
@@ -38,12 +38,14 @@ int Z906::update(){
 
 int Z906::request(uint8_t cmd){
 	
-	update();
-	
+	if(update())
+	{
 	if(cmd == VERSION) return status[STATUS_VER_C] + 10 * status[STATUS_VER_B] + 100 * status[STATUS_VER_A];
 	if(cmd == CURRENT_INPUT) return status[STATUS_CURRENT_INPUT] + 1;
 	
 	return status[cmd];
+	}
+	return 0;
 }
 
 int Z906::cmd(uint8_t cmd){
@@ -100,8 +102,10 @@ uint8_t Z906::main_sensor(){
 	if (millis() - currentMillis > SERIAL_TIME_OUT) return 0;
 
 	uint8_t temp[TEMP_TOTAL_LENGTH];
-
+	
 	for(int i = 0; i < TEMP_TOTAL_LENGTH; i++) temp[i] = dev_serial->read();
+	
+	if(temp[2] != EXP_MODEL_TEMP) return 0;
 	
 	return temp[7];
 }

@@ -94,7 +94,8 @@ uint8_t main_sensor();
 private:
 
 const uint8_t EXP_STX				= 	0xAA;
-const uint8_t EXP_MODEL				= 	0x0A;
+const uint8_t EXP_MODEL_STATUS		= 	0x0A;
+const uint8_t EXP_MODEL_TEMP		= 	0x0C;
 
 const uint8_t STATUS_STX			=	0x00;
 const uint8_t STATUS_MODEL			=	0x01;
