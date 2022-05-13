@@ -15,6 +15,10 @@ The main component is a Renesas [D2-71583](datasheet/D2-71583.pdf) intelligent d
 
 <p align="center"><img src=/images/D2-71583.jpg></p>
 
+The system requires external firmware to boot the DSP, the [EN25F10A](datasheet/EN25F10A.pdf) serial flash memory has been chosen.
+
+This is the [dump](bin/EN25F10.BIN) data.
+
 # DE-15 Console Connector
 
 The communication between the Digital Audio Processor and the console is done through TTL serial communication at 3.3V.
