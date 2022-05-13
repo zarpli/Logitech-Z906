@@ -5,65 +5,48 @@ Z906::Z906(HardwareSerial &serial) {
 	dev_serial->begin(BAUD_RATE,SERIAL_CONFIG);
 }
 
-int Z906::request(unsigned char cmd){
+// Longitudinal Redundancy Check {-1,-1}
+
+uint8_t Z906::LRC(uint8_t* pData, uint8_t length){
+
+	uint8_t LRC = 0;
+
+    for (int i = 1; i < length-1; i++) LRC -= pData[i];
+
+	return LRC;
+}
+
+
+int Z906::update(){
 	
 	dev_serial->write(GET_STATUS);
 	
 	unsigned long currentMillis = millis();
 	
-	while(dev_serial->available() < CMD_TOTAL_LENGTH)
+	while(dev_serial->available() < STATUS_TOTAL_LENGTH)
 	if (millis() - currentMillis > SERIAL_TIME_OUT) return 0;
 
-    if (dev_serial->read() != CMD_STX) return 0;
-    if (dev_serial->read() != CMD_STATUS) return 0;
-	if (dev_serial->read() != CMD_LENGTH) return 0;
+	for(int i = 0; i < STATUS_TOTAL_LENGTH; i++) status[i] = dev_serial->read();
 	
-	unsigned char main_gain 			= dev_serial->read();
-	unsigned char read_gain 			= dev_serial->read();
-	unsigned char center_gain 			= dev_serial->read();
-	unsigned char sub_gain 				= dev_serial->read();
-	unsigned char current_input 		= dev_serial->read();
-										  dev_serial->read();
-	unsigned char effect_input_4 		= dev_serial->read();
-	unsigned char effect_input_5 		= dev_serial->read();
-	unsigned char effect_input_2 		= dev_serial->read();
-	unsigned char effect_input_AUX 		= dev_serial->read();
-	unsigned char effect_input_1 		= dev_serial->read();
-	unsigned char effect_input_3 		= dev_serial->read();
-	unsigned char spdif_status 			= dev_serial->read();
-	unsigned char signal_input_status 	= dev_serial->read();
-	unsigned char version_a 			= dev_serial->read();
-	unsigned char version_b 			= dev_serial->read();
-	unsigned char version_c 			= dev_serial->read();
-	unsigned char standby 				= dev_serial->read();
-	unsigned char auto_standby 			= dev_serial->read();
-	unsigned char checksum 				= dev_serial->read();
+    if (status[STATUS_STX] != EXP_STX) return 0;
+    if (status[STATUS_MODEL] != EXP_MODEL) return 0;
+	if (status[STATUS_CHECKSUM] == LRC(status, STATUS_TOTAL_LENGTH)) return 1;
 	
-	switch (cmd)
-	{
-	case MAIN_GAIN: 			return main_gain;
-	case READ_GAIN: 			return read_gain;
-	case CENTER_GAIN: 			return center_gain;
-	case SUB_GAIN: 				return sub_gain;
-	case CURRENT_INPUT:			return current_input + 1;
-	case EFFECT_INPUT_1:		return effect_input_1;
-	case EFFECT_INPUT_2:		return effect_input_2;
-	case EFFECT_INPUT_3: 		return effect_input_3;
-	case EFFECT_INPUT_4: 		return effect_input_4;
-	case EFFECT_INPUT_5: 	  	return effect_input_5;
-	case EFFECT_INPUT_AUX:		return effect_input_AUX;
-	case SPDIF_STATUS:			return spdif_status;
-	case SIGNAL_INPUT_STATUS:	return signal_input_status;
-	case VERSION: 				return version_c + 10 * version_b + 100 * version_a;
-	case STANDBY: 				return standby;
-	case AUTO_STANDBY: 			return auto_standby;
-	case CHECKSUM: 				return checksum;
-	}
+	return 0;
+	
 }
 
-int Z906::command(unsigned char cmd){
+int Z906::request(uint8_t cmd){
 	
-	if(cmd == GET_STATUS || cmd == GET_TEMP || cmd == GET_INPUT_GAIN) return 0;
+	update();
+	
+	if(cmd == VERSION) return status[STATUS_VER_C] + 10 * status[STATUS_VER_B] + 100 * status[STATUS_VER_A];
+	if(cmd == CURRENT_INPUT) return status[STATUS_CURRENT_INPUT] + 1;
+	
+	return status[cmd];
+}
+
+int Z906::cmd(uint8_t cmd){
 	
 	dev_serial->write(cmd);
 
@@ -73,4 +56,52 @@ int Z906::command(unsigned char cmd){
 	if (millis() - currentMillis > SERIAL_TIME_OUT) return 0;
 
 	return dev_serial->read();
+}
+
+int Z906::cmd(uint8_t cmd_a, uint8_t cmd_b){
+	
+	update();
+	
+	status[cmd_a] = cmd_b;
+	
+	status[STATUS_CHECKSUM] = LRC(status, STATUS_TOTAL_LENGTH);
+	
+	for(int i = 0; i <STATUS_TOTAL_LENGTH; i++)
+	dev_serial->write(status[i]);
+
+	unsigned long currentMillis = millis();
+	
+	while(dev_serial->available() < ACK_TOTAL_LENGTH)
+	if (millis() - currentMillis > SERIAL_TIME_OUT) return 0;
+
+	for(int i = 0; i < ACK_TOTAL_LENGTH; i++) dev_serial->read();
+
+}
+
+void Z906::print_status(){
+	
+	update();
+	
+	for(int i = 0; i <STATUS_TOTAL_LENGTH; i++)
+	{
+		Serial.print(status[i],HEX);
+		Serial.print(" ");
+	}
+	Serial.print("\n");
+}
+
+uint8_t Z906::main_sensor(){
+	
+	dev_serial->write(GET_TEMP);
+	
+	unsigned long currentMillis = millis();
+	
+	while(dev_serial->available() < TEMP_TOTAL_LENGTH)
+	if (millis() - currentMillis > SERIAL_TIME_OUT) return 0;
+
+	uint8_t temp[TEMP_TOTAL_LENGTH];
+
+	for(int i = 0; i < TEMP_TOTAL_LENGTH; i++) temp[i] = dev_serial->read();
+	
+	return temp[7];
 }
