@@ -32,7 +32,7 @@ The following table illustrates the pinout.
 |6|GND|12|TX|
 |13|RX|15|Console Enable|
 
-D2-71583 **NO** is 5V tolerant.
+D2-71583 **NO** is 5V tolerant. If you have Arduino UNO, MEGA, etc use a **Logic Level Converter.**
 
 |Serial settings||
 |---|---|
