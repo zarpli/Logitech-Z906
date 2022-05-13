@@ -100,3 +100,11 @@ LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 |CENTER_LEVEL|0-255|Set Center Level to argument b value|
 |SUB_LEVEL|0-255|Set Sub Level to argument b value|
 
+# Get Temperature
+
+return the value of main temperature sensor.
+```C++
+OGI.main_sensor()
+```
+
+
