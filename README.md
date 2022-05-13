@@ -104,7 +104,7 @@ LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 
 return the value of main temperature sensor.
 ```C++
-OGI.main_sensor()
+LOGI.main_sensor()
 ```
 
 
