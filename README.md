@@ -65,6 +65,17 @@ Examples :
 LOGI.cmd(MUTE_ON)         // Enable Mute
 LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 ```
+# Request data
+
+```C++
+LOGI.request(MAIN_LEVEL)    // return current Main Level
+LOGI.request(READ_LEVEL)    // return current Read Level
+LOGI.request(CENTER_LEVEL)  // return current Center Level
+LOGI.request(SUB_LEVEL)     // return current Subwoofer Level
+
+LOGI.request(STATUS_STBY)   // return stand-by status
+```
+
 # Single argument command
 |argument|description|
 |---|---|
@@ -109,6 +120,10 @@ LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 |READ_LEVEL|0-255|Set Read Level to argument b value|
 |CENTER_LEVEL|0-255|Set Center Level to argument b value|
 |SUB_LEVEL|0-255|Set Sub Level to argument b value|
+
+# EEPROM
+
+Use the **EEPROM_SAVE** function with caution. Each EEPROM has a limited number of write cycles (~100,000) per address. If you write excessively to the EEPROM, you will reduce the lifespan.
 
 # Get Temperature
 
