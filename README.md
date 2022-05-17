@@ -11,7 +11,7 @@ The [Logitech Z906](datasheet/Z906_User_Manual.pdf) is who has six class D ampli
 
 This information is made to be able to control the unit without the need of the console, using any device with a programmable serial port, especially an arduino :)
 
-Codenamed "Liszt".
+Codenamed "[Liszt](https://www.reddit.com/r/hardwarehacking/comments/up09fu/comment/i8hvcx3/)".
 
 # Hardware
 
