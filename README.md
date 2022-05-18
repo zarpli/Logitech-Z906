@@ -180,4 +180,4 @@ delay(1000);
 
 ```
 # YouTube
-<a href="https://www.youtube.com/embed/QVzbw9zAXnw" target="_blank"><img src="http://img.youtube.com/vi/QVzbw9zAXnw/0.jpg" alt="YouTube" width="400" border="10"/></a>
+<a href="https://www.youtube.com/watch?v=QVzbw9zAXnw" target="_blank"><img src="http://img.youtube.com/vi/QVzbw9zAXnw/0.jpg" alt="YouTube" width="400" border="10"/></a>
