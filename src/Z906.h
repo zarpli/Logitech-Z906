@@ -19,17 +19,17 @@
 #define SELECT_INPUT_5		0x06
 #define SELECT_INPUT_AUX	0x07
 
-#define LEVEL_MAIN_UP		  0x08
-#define LEVEL_MAIN_DOWN		0x09
-#define LEVEL_SUB_UP		  0x0A
-#define LEVEL_SUB_DOWN		0x0B
-#define LEVEL_CENTER_UP		0x0C
-#define LEVEL_CENTER_DOWN	0x0D
-#define LEVEL_REAR_UP		  0x0E
-#define LEVEL_DOWN_UP		  0x0F
+#define LEVEL_MAIN_UP     0x08
+#define LEVEL_MAIN_DOWN   0x09
+#define LEVEL_SUB_UP      0x0A
+#define LEVEL_SUB_DOWN    0x0B
+#define LEVEL_CENTER_UP   0x0C
+#define LEVEL_CENTER_DOWN 0x0D
+#define LEVEL_REAR_UP     0x0E
+#define LEVEL_DOWN_UP     0x0F
 
-#define	PWM_OFF				    0x10
-#define	PWM_ON				    0x11
+#define	PWM_OFF           0x10
+#define	PWM_ON            0x11
 
 #define SELECT_EFFECT_3D	0x14			
 #define SELECT_EFFECT_41	0x15			
