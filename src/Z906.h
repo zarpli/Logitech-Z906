@@ -36,10 +36,10 @@
 #define SELECT_EFFECT_21  0x16			
 #define SELECT_EFFECT_NO  0x35			
 
-#define	EEPROM_SAVE			  0x36
+#define	EEPROM_SAVE       0x36
 
-#define	MUTE_ON				    0x38
-#define	MUTE_OFF			    0x39
+#define	MUTE_ON           0x38
+#define	MUTE_OFF          0x39
 
 #define BLOCK_INPUTS		  0x22
 #define RESET_PWR_UP_TIME	0x30
