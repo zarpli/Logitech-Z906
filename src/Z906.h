@@ -32,9 +32,9 @@
 #define	PWM_ON            0x11
 
 #define SELECT_EFFECT_3D  0x14			
-#define SELECT_EFFECT_41	0x15			
-#define SELECT_EFFECT_21	0x16			
-#define SELECT_EFFECT_NO	0x35			
+#define SELECT_EFFECT_41  0x15			
+#define SELECT_EFFECT_21  0x16			
+#define SELECT_EFFECT_NO  0x35			
 
 #define	EEPROM_SAVE			  0x36
 
