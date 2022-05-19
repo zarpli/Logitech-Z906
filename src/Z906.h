@@ -19,63 +19,63 @@
 #define SELECT_INPUT_5		0x06
 #define SELECT_INPUT_AUX	0x07
 
-#define LEVEL_MAIN_UP		0x08
+#define LEVEL_MAIN_UP		  0x08
 #define LEVEL_MAIN_DOWN		0x09
-#define LEVEL_SUB_UP		0x0A
+#define LEVEL_SUB_UP		  0x0A
 #define LEVEL_SUB_DOWN		0x0B
 #define LEVEL_CENTER_UP		0x0C
 #define LEVEL_CENTER_DOWN	0x0D
-#define LEVEL_REAR_UP		0x0E
-#define LEVEL_DOWN_UP		0x0F
+#define LEVEL_REAR_UP		  0x0E
+#define LEVEL_DOWN_UP		  0x0F
 
-#define	PWM_OFF				0x10
-#define	PWM_ON				0x11
+#define	PWM_OFF				    0x10
+#define	PWM_ON				    0x11
 
 #define SELECT_EFFECT_3D	0x14			
 #define SELECT_EFFECT_41	0x15			
 #define SELECT_EFFECT_21	0x16			
 #define SELECT_EFFECT_NO	0x35			
 
-#define	EEPROM_SAVE			0x36
+#define	EEPROM_SAVE			  0x36
 
-#define	MUTE_ON				0x38
-#define	MUTE_OFF			0x39
+#define	MUTE_ON				    0x38
+#define	MUTE_OFF			    0x39
 
-#define BLOCK_INPUTS		0x22
+#define BLOCK_INPUTS		  0x22
 #define RESET_PWR_UP_TIME	0x30
 #define NO_BLOCK_INPUTS		0x33
 
 // Double commmands
 
-#define MAIN_LEVEL			0x03
-#define READ_LEVEL			0x04
-#define CENTER_LEVEL		0x05
-#define SUB_LEVEL			0x06
+#define MAIN_LEVEL			  0x03
+#define READ_LEVEL			  0x04
+#define CENTER_LEVEL		  0x05
+#define SUB_LEVEL			    0x06
 
 // Requests
 
-#define VERSION				0xF0
-#define CURRENT_INPUT		0xF1
+#define VERSION				    0xF0
+#define CURRENT_INPUT		  0xF1
 #define GET_INPUT_GAIN		0x2F
-#define GET_TEMP			0x25
+#define GET_TEMP			    0x25
 #define GET_PWR_UP_TIME		0x31
-#define GET_STATUS			0x34
+#define GET_STATUS			  0x34
 
 // MASK
 
-#define EFFECT_3D			0x00			
-#define EFFECT_21			0x01			
-#define EFFECT_41			0x02			
-#define EFFECT_NO			0x03			
+#define EFFECT_3D			    0x00			
+#define EFFECT_21			    0x01			
+#define EFFECT_41			    0x02			
+#define EFFECT_NO			    0x03			
 
-#define SPK_NONE			0x00			
-#define SPK_ALL				0xFF
-#define SPK_FR				0x01
-#define SPK_FL				0x10
-#define SPK_RR				0x02
-#define SPK_RL				0x08
-#define SPK_CENTER			0x04
-#define	SPK_SUB				0x20
+#define SPK_NONE			    0x00			
+#define SPK_ALL				    0xFF
+#define SPK_FR				    0x01
+#define SPK_FL				    0x10
+#define SPK_RR				    0x02
+#define SPK_RL				    0x08
+#define SPK_CENTER			  0x04
+#define	SPK_SUB				    0x20
 
 
 class Z906
