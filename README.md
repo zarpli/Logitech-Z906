@@ -7,8 +7,6 @@ This 5.1 speaker system comes with a 1000 Watts Peak/500 Watts RMS power for a r
 
 The [Logitech Z906](datasheet/Z906_User_Manual.pdf) is who has six class D amplifiers included, but you cannot use them if you do not have the console connected.
 
-<p align="center"><img src=/images/z906-console.png></p>
-
 This information is made to be able to control the unit without the need of the console, using any device with a programmable serial port, especially an arduino :)
 
 Codenamed "[Liszt](https://www.reddit.com/r/hardwarehacking/comments/up09fu/comment/i8hvcx3/)".
