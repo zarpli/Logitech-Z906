@@ -51,6 +51,8 @@ Here is the DE-15 male as viewed from the front of the Main Board.
 
 Connect pin 15 to GND.
 
+<p align="center"><img src=/images/Z906-ECON.jpg></p>
+
 # Basic Usage
 
 Instantiate a Z906 object and attach to Serial1, you may create multiple Z906 objects.
