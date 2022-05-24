@@ -148,7 +148,7 @@ void setup(){
 Serial.begin(9600);
 while(!Serial);
 
-while(LOGI.cmd(VERSION) == 0)
+while(LOGI.request(VERSION) == 0)
 {
   Serial.println("Waiting Z906 Power-Up");
   delay(1000);
