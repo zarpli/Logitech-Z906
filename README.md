@@ -98,7 +98,7 @@ LOGI.request(VERSION)       // return firmware version
 |LEVEL_CENTER_UP|Increase Center Level by one unit|
 |LEVEL_CENTER_DOWN|Decrease Subwoofer Level by one unit|
 |LEVEL_REAR_UP|Increase Rear Level by one unit|
-|LEVEL_DOWN_UP|Decrease Rear Level by one unit|
+|LEVEL_REAR_DOWN|Decrease Rear Level by one unit|
 ||
 |PWM_OFF|PWM Generator OFF|
 |PWM_ON|PWM Generator ON|
