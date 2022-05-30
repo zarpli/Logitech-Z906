@@ -26,7 +26,7 @@
 #define LEVEL_CENTER_UP   0x0C
 #define LEVEL_CENTER_DOWN 0x0D
 #define LEVEL_REAR_UP     0x0E
-#define LEVEL_DOWN_UP     0x0F
+#define LEVEL_REAR_DOWN   0x0F
 
 #define	PWM_OFF           0x10
 #define	PWM_ON            0x11
