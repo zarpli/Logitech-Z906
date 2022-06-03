@@ -61,7 +61,7 @@ Z906 LOGI(Serial1)
 ```
 **cmd** method uses single or double argument, check next tables.
 ```C++
-LOGI.cmd(arg_a)
+LOGI.cmd(arg)
 LOGI.cmd(arg_a, arg_b)
 ```
 Examples : 
