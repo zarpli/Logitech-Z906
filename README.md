@@ -183,7 +183,7 @@ delay(1000);
 
 [Docklight](https://docklight.de/) is a testing, analysis and simulation tool for serial communication protocols.
 
-Use the following project to use BrightSign unit connected to a PC running Windows OS.
+Use the following project to use Z906 unit connected to a PC running Windows OS.
 
 [Z906.ptp](docklight/Z906.ptp)
 
