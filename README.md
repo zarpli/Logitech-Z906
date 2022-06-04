@@ -187,7 +187,7 @@ Use the following project to use BrightSign unit connected to a PC running Windo
 
 [Z906.ptp](docklight/Z906.ptp)
 
-<img src=https://raw.githubusercontent.com/zarpli/Logitech-Z906/main/images/docklight.png width="800">
+<img src=https://raw.githubusercontent.com/zarpli/Logitech-Z906/main/images/docklight.png>
 
 # YouTube
 <a href="https://www.youtube.com/watch?v=QVzbw9zAXnw" target="_blank"><img src="http://img.youtube.com/vi/QVzbw9zAXnw/0.jpg" alt="YouTube" width="400" border="10"/></a>
