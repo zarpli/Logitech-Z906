@@ -32,8 +32,8 @@ The following table illustrates the pinout.
 |Pin|Description|Pin|Description|
 |---|---|---|---|
 |3|GND|6|GND|
-|12|TX|13|RX|
-|15|Console Enable|||
+|11|3.3V @ 250mA|12|TX|
+|13|RX|15|Console Enable|
 
 D2-71583 **NO** is 5V tolerant. If you have Arduino UNO, MEGA, etc use a **Logic Level Converter.**
 
