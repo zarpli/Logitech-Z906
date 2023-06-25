@@ -74,7 +74,7 @@ LOGI.cmd(MAIN_LEVEL, 15)  // Set Main Level to 15
 
 ```C++
 LOGI.request(MAIN_LEVEL)    // return current Main Level
-LOGI.request(READ_LEVEL)    // return current Read Level
+LOGI.request(REAR_LEVEL)    // return current Rear Level
 LOGI.request(CENTER_LEVEL)  // return current Center Level
 LOGI.request(SUB_LEVEL)     // return current Subwoofer Level
 
@@ -123,7 +123,7 @@ LOGI.request(VERSION)       // return firmware version
 |argument a|argument b|description|
 |---|---|---|
 |MAIN_LEVEL|0-255|Set Main Level to argument b value|
-|READ_LEVEL|0-255|Set Read Level to argument b value|
+|REAR_LEVEL|0-255|Set Rear Level to argument b value|
 |CENTER_LEVEL|0-255|Set Center Level to argument b value|
 |SUB_LEVEL|0-255|Set Sub Level to argument b value|
 
@@ -136,6 +136,21 @@ Use the **EEPROM_SAVE** function with caution. Each EEPROM has a limited number 
 return the value of main temperature sensor.
 ```C++
 LOGI.main_sensor()
+```
+
+# Turn the amplifyer  on or off
+
+Turns the amplifyer on or off. When turning off, the amplifyer will also store the current state of the unit in EEPROM. Note, that the amplifyer still draws a certain amount of power and will only fully turn off, if you also open the connection between pin15 and GND on the DSUB connector.
+```C++
+LOGI.on()
+LOGI.off()
+```
+
+# Change input
+
+Changes the input and applies the input effect. If not input effect is selected, the device's factory defaults will be used
+```C++
+LOGI.input(input, effect)
 ```
 
 # Basic Example
