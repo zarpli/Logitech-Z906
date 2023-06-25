@@ -148,7 +148,7 @@ LOGI.off()
 
 # Change input
 
-Changes the input and applies the input effect. If not input effect is selected, the device's factory defaults will be used
+Changes the input and applies the input effect. If no input effect is selected, the device's factory defaults will be used.
 ```C++
 LOGI.input(input, effect)
 ```
@@ -174,11 +174,11 @@ while(LOGI.request(VERSION) == 0)
 
 Serial.println("Z906 Version : " + (String) LOGI.request(VERSION));
 
-// Power ON PWM Generator
-LOGI.cmd(PWM_ON);
+// Power ON the amplifier
+LOGI.on();
 
 // Select RCA 2.0 Input
-LOGI.cmd(SELECT_INPUT_2);
+LOGI.input(SELECT_INPUT_2);
 
 // Disable Mute
 LOGI.cmd(MUTE_OFF);
