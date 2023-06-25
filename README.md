@@ -138,9 +138,9 @@ return the value of main temperature sensor.
 LOGI.main_sensor()
 ```
 
-# Turn the amplifyer  on or off
+# Turn the amplifier  on or off
 
-Turns the amplifyer on or off. When turning off, the amplifyer will also store the current state of the unit in EEPROM. Note, that the amplifyer still draws a certain amount of power and will only fully turn off, if you also open the connection between pin15 and GND on the DSUB connector.
+Turns the amplifier on or off. When turning off, the amplifier will also store the current state of the unit in EEPROM. Note, that the amplifier still draws a certain amount of power and will only fully turn off, if you also open the connection between pin15 and GND on the DSUB connector.
 ```C++
 LOGI.on()
 LOGI.off()
