@@ -27,11 +27,11 @@ while(LOGI.request(VERSION) == 0)
 
 Serial.println("Z906 Version : " + (String) LOGI.request(VERSION));
 
-// Power ON PWM Generator
-LOGI.cmd(PWM_ON);
+// Power ON amplifier
+LOGI.on();
 
 // Select RCA 2.0 Input
-LOGI.cmd(SELECT_INPUT_2);
+LOGI.input(SELECT_INPUT_2);
 
 // Disable Mute
 LOGI.cmd(MUTE_OFF);
