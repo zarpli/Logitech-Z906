@@ -191,3 +191,15 @@ Use the following project to use Z906 unit connected to a PC.
 
 # YouTube
 <a href="https://www.youtube.com/watch?v=QVzbw9zAXnw" target="_blank"><img src="http://img.youtube.com/vi/QVzbw9zAXnw/0.jpg" alt="YouTube" width="400" border="10"/></a>
+
+
+# subwoofer plate no-amp
+
+CAD file for manufacturing a passive plate
+
+[FreeCAD](cad/Z906_plate.FCStd) file.
+
+<a href="https://www.youtube.com/watch?v=WweqzsxZKF8" target="_blank"><img src="http://img.youtube.com/vi/WweqzsxZKF8/0.jpg" alt="YouTube" width="400" border="10"/></a>
+
+
+
